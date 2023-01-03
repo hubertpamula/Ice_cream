@@ -1,0 +1,182 @@
+.container {
+  margin: 0 20px;
+}
+.customer {
+  width: 100%;
+  background-color: var(--white);
+}
+.customer-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 86px;
+  width: 280px;
+  margin: 0 auto;
+}
+.customer__photo {
+  text-align: center;
+  margin-bottom: 29px;
+}
+.customer__comment-inner {
+  background: var(--grey_2);
+  margin-bottom: 42px;
+  padding: 43px 50px 26px;
+  z-index: 2;
+}
+.customer__comment {
+  font-size: 12px;
+  padding: 0 15px;
+  text-align: center;
+  line-height: 255%;
+  color: var(--black);
+  background: repeating-linear-gradient(
+    var(--grey_2),
+    var(--grey_2) 29px,
+    var(--grey_3) 30px
+  );
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+}
+.customer__comment-comma::before {
+  content: url('../images/commas.svg');
+  position: absolute;
+  width: 54px;
+  height: 40px;
+  left: 14px;
+  top: -15px;
+  z-index: -1;
+}
+.customer__comment-comma::after {
+  content: url('../images/points.svg');
+  position: absolute;
+  width: 32px;
+  height: 4px;
+  left: 74px;
+  bottom: -35px;
+}
+.customer__tittle {
+  text-align: center;
+  font-size: 14px;
+  line-height: 186%;
+  color: var(--black);
+  margin-bottom: 80px;
+  position: relative;
+}
+.customer__tittle-home:last-child::after {
+  content: url('../images/hrdots.svg');
+  position: absolute;
+  width: 73px;
+  height: 12px;
+  left: 104px;
+  top: 33px;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-inner {
+    padding-top: 121px;
+    padding-bottom: 119px;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .customer__comment-inner {
+    padding: 47px 80px 34px 80px;
+    width: 620px;
+    margin-bottom: 42px;
+  }
+  .customer__comment {
+    font-size: 14px;
+    align-items: center;
+    line-height: 216%;
+    color: var(--black);
+    background: repeating-linear-gradient(
+      var(--grey_2),
+      var(--grey_2) 28px,
+      var(--grey_3) 30px
+    );
+  }
+  .customer__comment-comma::before {
+    content: url('../images/commas.svg');
+    position: absolute;
+    width: 54px;
+    height: 40px;
+    left: -18px;
+    top: -15px;
+  }
+  .customer__comment-comma::after {
+    content: url('../images/points.svg');
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    left: 216px;
+    top: 130px;
+  }
+  .customer__tittle-home:last-child::after {
+    content: url('../images/hrdots.svg');
+    position: absolute;
+    width: 73px;
+    height: 12px;
+    left: 276px;
+    top: 35px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer-inner {
+    padding-top: 123px;
+    padding-bottom: 132px;
+    width: 926px;
+    margin: 0 auto;
+  }
+
+  .customer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .customer__photo {
+    margin-bottom: 15px;
+  }
+  .customer__comment-inner {
+    padding: 47px 109px 30px 107px;
+    width: 926px;
+    margin-bottom: 42px;
+  }
+  .customer__comment {
+    font-size: 16px;
+    align-items: center;
+    line-height: 186%;
+    color: var(--black);
+    background: repeating-linear-gradient(
+      var(--grey_2),
+      var(--grey_2) 26px,
+      var(--grey_3) 28px
+    );
+  }
+
+  .customer__comment-comma::before {
+    content: url('../images/commas.svg');
+    position: absolute;
+    width: 54px;
+    height: 40px;
+    left: -14px;
+    top: -15px;
+  }
+  .customer__comment-comma::after {
+    content: url('../images/points.svg');
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    left: 342px;
+    top: 90px;
+  }
+  .customer__tittle-home:last-child::after {
+    content: url('../images/hrdots.svg');
+    position: absolute;
+    width: 73px;
+    height: 12px;
+    left: 30px;
+    top: 45px;
+  }
+}
